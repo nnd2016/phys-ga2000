@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[dvipsnames, svgnames, x11names, hyperref]{xcolor}
+\hypersetup{
+	colorlinks,
+	citecolor=Violet,
+	linkcolor=Red,
+	urlcolor=Blue}
+%\usepackage{natbib}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\headheight}{0in}
+\setlength{\textheight}{8.0in}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{Homework 5 Solution}
+
+\author{Nana Ama Nyamekye Darpaah}
+
+\begin{document}
+	
+	\maketitle
+	
+	
+\section{Question 1}
+
+The formula
+	\begin{equation}
+	f(x) = 1 + \tanh(2x) 
+	\end{equation}
+
+can be solved analytically as 
+	\begin{equation}
+	f'(x) = 1 - \tanh^{2}(2x) 
+	\end{equation}
+
+Plotting the analytical version and that obtained numerically from python on the range $x = [-4, 4]$, it is seen that they are the same, with minimal error
+
+
+
+\section{Question 2}
+For a function to be maximum, it's value when its first derivative is set to $0$. For the function 
+\begin{equation}
+	f(x) = x^{a-1}\exp^{-x} 
+\end{equation}
+we see that 
+\begin{eqnarray}
+	f'(x) &=& (a-1)x^{a-2}\exp^{-x} - x^{a-1}\exp^{-x} = 0 \\
+	f'(x) &=& \frac{a-1}{x}x^{a-1}\exp^{-x} - x^{a-1}\exp^{-x} = 0\\
+	      &=&  (\frac{a-1}{x} -1)x^{a-1}\exp^{-x} = 0
+\end{eqnarray}
+setting the coefficient to $0$ yields
+\begin{eqnarray}
+	\frac{a-1}{x} - 1 = 0 \\
+	x = a - 1
+\end{eqnarray}
+
+% Question 2c
+For a change in variables $z = \frac{x}{c + x}$, when solved analytically yields the value of  $z = \frac{1}{2}$ at $x = c$. Hence, $c$ can be any choice provided it is equal to $x$
+
+
+
+
+
+\section{Question 3}
+\end{document}
